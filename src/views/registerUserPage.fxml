@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.registerUserPageController">
+   <children>
+      <Pane prefHeight="560.0" prefWidth="964.0">
+         <children>
+            <TextField fx:id="textFieldFullName" layoutX="151.0" layoutY="132.0" prefHeight="25.0" prefWidth="406.0" promptText="Full Name..." />
+            <TextField fx:id="textFieldAddress" layoutX="151.0" layoutY="178.0" prefHeight="25.0" prefWidth="406.0" promptText="Address..." />
+            <TextField fx:id="textFieldPhoneNumber" layoutX="151.0" layoutY="224.0" prefHeight="25.0" prefWidth="406.0" promptText="Phone Number..." />
+            <TextField fx:id="textFieldUsername" layoutX="151.0" layoutY="273.0" prefHeight="25.0" prefWidth="406.0" promptText="Userrname..." />
+            <PasswordField fx:id="textFieldPassword" layoutX="151.0" layoutY="321.0" prefHeight="25.0" prefWidth="406.0" promptText="Password..." />
+            <Pane layoutX="693.0" layoutY="132.0" style="-fx-border-color: #000000;">
+               <children>
+                  <ImageView fx:id="imageViewProfileImage" fitHeight="209.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Button layoutX="752.0" layoutY="366.0" mnemonicParsing="false" onAction="#selectImage" text="Select Image" />
+            <Button fx:id="buttonUpload" layoutX="151.0" layoutY="400.0" mnemonicParsing="false" onAction="#uploadToDB" prefHeight="25.0" prefWidth="94.0" text="UPLOAD" />
+            <Button fx:id="buttonClear" layoutX="473.0" layoutY="400.0" mnemonicParsing="false" onAction="#clearAllFields" prefHeight="25.0" prefWidth="84.0" text="CLEAR" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="42.0" prefWidth="964.0" style="-fx-background-color: #2A363F;" text=" " textAlignment="CENTER" textFill="#979fa1">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets left="35.0" />
+         </padding>
+      </Label>
+      <Label layoutX="269.0" layoutY="3.0" prefHeight="32.0" prefWidth="362.0" text="New Cashier Registration Page" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="917.0" layoutY="-8.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: #2A363F;" text="×" textFill="#ee5253">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets bottom="-5.0" />
+         </padding>
+         <tooltip>
+            <Tooltip text="Close">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>
